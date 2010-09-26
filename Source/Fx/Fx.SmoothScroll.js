@@ -40,6 +40,7 @@ var SmoothScroll = Fx.SmoothScroll = new Class({
 		if (!Browser.Engine.webkit419) {
 			this.addEvent('complete', function(){
 				win.location.hash = this.anchor;
+				this.element.scrollTo(this.to[0] + this.options.offset.x, this.to[1] + this.options.offset.y);
 			}, true);
 		}
 	},

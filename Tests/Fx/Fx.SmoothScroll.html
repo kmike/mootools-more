@@ -115,5 +115,10 @@ H
 <a href="#top">Back to top</a>
 <script src="/depender/build?require=More/Fx.SmoothScroll"></script>
 <script>
-new Fx.SmoothScroll();
+window.fx = new Fx.SmoothScroll({
+	offset: {
+		x: 0,
+		y: -10
+	}
+});
 </script>
